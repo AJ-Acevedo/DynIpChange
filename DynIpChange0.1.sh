@@ -11,7 +11,7 @@ ASSETS=/usr/sbin/DynIpChange
 [ -e $ASSETS/Current_IP ] || touch $ASSETS/Current_IP
 [ -e $ASSETS/mailmessage ] || touch $ASSETS/mailmessage
 MAILME=$ASSETS/mailmessage
-ADMIN1=sohosysadmin@apple.com
+ADMIN1=you@youremail.com
 CURRENT=`cat $ASSETS/Current_IP`
 PREVIOUS=`cat $ASSETS/Previous_IP` 
 
