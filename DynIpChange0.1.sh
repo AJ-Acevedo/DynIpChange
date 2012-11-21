@@ -24,7 +24,7 @@ curl http://checkip.dyndns.org/ 2>/dev/null | ruby -pe '$_=$_.scan(/\d+\.\d+\.\d
 if [ "$CURRENT" != "$PREVIOUS" ];
 
 then
-	echo "From: IP Address Change Notice <geniusbrain@sohoac.com>" >$MAILME
+	echo "From: IP Address Change Notice <you@yourdomain.com>" >$MAILME
 	echo "To: $ADMIN1" >>$MAILME
 	#echo "CC: $ADMIN2" >>$MAILME --uncomment if using second email address.
 	echo "Subject: IP Address Change Notice" - `date +%Y:%m:%d` >>$MAILME
